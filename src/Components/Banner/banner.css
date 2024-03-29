@@ -4,6 +4,7 @@
   margin-bottom: -80px;
   color: white;
   object-fit: contain;
+  width: 100%;
 }
 .banner_contents {
   margin-left: 30px;
@@ -51,4 +52,30 @@
   color: white;
   background-color: black;
   transition: all0.2s;
+}
+@media (max-width: 768px) {
+  .banner_contents {
+    max-width: 80%;
+    left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner_contents {
+    max-width: 90%;
+    left: 5px;
+  }
+
+  .banner_title {
+    font-size: 2rem;
+  }
+
+  .banner_button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .banner_discription {
+    font-size: 0.9rem;
+  }
 }
